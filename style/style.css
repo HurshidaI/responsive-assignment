@@ -1,0 +1,101 @@
+                                body {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            
+                            .grid-container {
+                                display: grid;
+                                /* max-width: 1440px; */
+                                /* height: 810px; */
+                                background-color: beige;
+                                grid-gap: 10px;
+                                grid-template-columns: repeat(10, 1fr);
+                                grid-template-rows: repeat(10, 1fr);
+                                /* padding: ; */
+                            }
+                            
+                            .logo-pic {
+                                grid-column: 3/4;
+                                grid-row: 2/3;
+                            }
+                            
+                            .big-screen {
+                                grid-column: 7/9;
+                                grid-row: 2/3;
+                                list-style: none;
+                                display: flex;
+                                justify-content: space-around;
+                            }
+                            
+                            h1 {
+                                font-family: Poppins;
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 90px;
+                                line-height: 102px;
+                                letter-spacing: -2px;
+                                color: #242635;
+                            }
+                            
+                            p {
+                                font-family: Source Sans Pro;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 22px;
+                                line-height: 33px;
+                                /* or 150% */
+                                text-align: center;
+                                color: #242635;
+                            }
+                            
+                            .content {
+                                grid-column: 4/8;
+                                grid-row: 3/7;
+                                display: flex;
+                                flex-wrap: wrap;
+                                align-items: center;
+                                justify-content: center;
+                                text-align: center;
+                            }
+                            
+                            .main-pic {
+                                grid-column: 3/9;
+                                grid-row: 8/11;
+                            }
+                            
+                            .small-screen {
+                                display: none;
+                            }
+                            
+                            @media screen and (max-width:768px) {
+                                .logo-pic {
+                                    background-image: url(../images/Logo\ \(2\).png);
+                                    background-repeat: no-repeat;
+                                }
+                                .big-screen {
+                                    display: none;
+                                }
+                                .small-screen {
+                                    display: visible;
+                                }
+                                .icon {
+                                    display: none;
+                                }
+                            }
+                            
+                            @media screen and (max-width:320px) {
+                                .logo-pic {
+                                    background-image: url(../images/Logo\ \(2\).png);
+                                    background-repeat: no-repeat;
+                                }
+                                .icon {
+                                    display: visible;
+                                }
+                            }
+                            
+                            @media screen and (min-width:769px) {
+                                .logo-pic {
+                                    background-image: url(../images/Logo\ \(1\).png);
+                                    background-repeat: no-repeat;
+                                }
